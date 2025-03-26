@@ -16,7 +16,9 @@ OA项目中XXXXX是如何增加或申请
 
 新增XXX
 
-新增方法：/xxx/xxx.mvc
+新增接口：/xxx/xxx.mvc
+
+新增方法：包路径.类名.方法名
 
 保存接口：/xxx/xxx.mvc
 
