@@ -18,6 +18,8 @@ OA项目中XXXXX是如何增加或申请
 
 新增方法：/xxx/xxx.mvc
 
+保存接口：/xxx/xxx.mvc
+
 保存方法：包路径.类名.方法名
 
 新增页面：/WEB-INF/jsp/xxx/xxx.jsp
@@ -26,7 +28,11 @@ OA项目中XXXXX是如何增加或申请
 
 先登录OA后台
 
-新增方法：/xxx/xxx.mvc
+新增接口：/manage/xxx/xxx.mvc
+
+新增方法：包路径.类名.方法名
+
+保存接口：/manage/xxx/xxx.mvc
 
 保存方法：包路径.类名.方法名
 
