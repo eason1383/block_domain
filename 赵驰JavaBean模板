@@ -1,0 +1,23 @@
+### 1、OA项目中XXX类是做什么用的，对应的表名及结构是什么
+<问题描述>
+	OA项目中XXX类是做什么用的，对应的表名及结构是什么
+</问题描述>
+
+<回答>
+XXX 类是在途区域表类，对应类名：com.bean.XXX.java，此处描述自己输入，XXX类对应的表名为：XXX表
+具体字段有（类字段名、中文名、数据库表字段名、字段类型）：
+           
+    parentZTRegion、父节点ID，对应com.bean.ZTRegion类、parentZTRegion，与、com.bean.ZTRegion；            
+    
+    areaCode、地区编码、areaCode、String；    
+    
+    countryAreaCode、国家地区编码、countryAreaCode、String；    
+
+    createdTime、创建时间、createdTime、Date；
+    
+    modifiedTime、修改时间、modifiedTime、Date；
+    
+    modifiedCount、修改次数、modifiedCount、String； 
+    
+    status、状态，对应com.data.ENUM.EnumBaseStatus类、status、enum；
+</回答>
