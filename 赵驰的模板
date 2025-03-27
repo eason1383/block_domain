@@ -1,0 +1,132 @@
+银行管理模块接口说明
+
+1. OA项目中如何查看银行列表
+<问题描述>
+OA项目中如何查看银行列表，包括查询条件和功能
+</问题描述>
+<回答>
+1. 接口：/bankManage/list.mvc
+2. 方法：com.web.controller.WebBankManageController.list
+3. 路径：/bankManage/bankManageList.jsp
+4. 查询条件：
+   - 银行ID
+   - 银行名称（中文）
+   - 银行简称（中文）
+   - 银行名称（英文）
+   - 银行简称（英文）
+   - 银行机构类型
+   - 是否能付款
+   - 是否对接银企
+   - 状态
+5. 功能：
+   - 分页显示银行列表
+   - 支持导出Excel
+   - 支持导出初始化SQL
+   - 支持新增银行（未对接财资系统时）
+   - 支持编辑银行信息（未对接财资系统时）
+6. 权限控制：
+   - 需要用户登录
+   - 根据用户部门ID过滤数据
+</回答>
+
+2. OA项目中如何根据银行查询是否为企业账户
+<问题描述>
+OA项目中如何根据银行ID查询该银行是否为企业账户
+</问题描述>
+<回答>
+1. 接口：/bankManage/getIsBankCompanyBank.mvc
+2. 方法：com.web.controller.WebBankManageController.getIsBankCompanyBank
+3. 路径：/bankManage/bankManageList.jsp
+4. 请求参数：bankManageId（银行ID）
+5. 返回结果：
+   - 0：不是企业账户
+   - 1：是企业账户
+6. 权限控制：
+   - 需要用户登录
+   - 未登录跳转到登录页面
+</回答>
+
+3. OA项目中如何根据银行名称搜索银行
+<问题描述>
+OA项目中如何根据银行名称搜索银行信息
+</问题描述>
+<回答>
+1. 接口：/bankManage/getByBankName.mvc
+2. 方法：com.web.controller.WebBankManageController.getByBankName
+3. 路径：/bankManage/bankManageList.jsp
+4. 请求参数：bankName（银行名称）
+5. 返回结果：
+   - 银行ID
+   - 银行名称
+   - 银行简称
+   - 银行机构类型
+6. 搜索规则：
+   - 支持模糊匹配
+   - 同时匹配银行名称和银行简称
+7. 权限控制：
+   - 需要用户登录
+   - 未登录跳转到登录页面
+</回答>
+
+4. OA项目中如何接收财资系统推送的银行信息
+<问题描述>
+OA项目中如何接收和处理财资系统实时推送的银行信息
+</问题描述>
+<回答>
+1. 接口：/bankManage/addOrUpdateFinanceOK.mvc
+2. 方法：com.web.controller.WebBankManageController.addOrUpdateFinanceOK
+3. 路径：直接接口调用
+4. 请求参数：BankManageDto对象（JSON格式）
+5. 处理逻辑：
+   - 判断是新增还是更新
+   - 复制属性并保存
+   - 更新修改次数
+6. 权限控制：
+   - 需要用户登录
+   - 未登录返回错误信息
+</回答>
+
+5. OA项目中如何导出银行初始化SQL
+<问题描述>
+OA项目中如何导出银行信息的初始化SQL文件
+</问题描述>
+<回答>
+1. 接口：/manage/bankManage/createOABankManageTableDataSql.mvc
+2. 方法：com.web.controller.manage.BankManageController.createOABankManageTableDataSql
+3. 路径：/manage/bankManage/bankManageList.jsp
+4. 导出内容：
+   - 所有银行信息
+   - 包含完整的INSERT语句
+5. 文件格式：
+   - 文件名：bankmanage.sql
+   - 包含所有字段的插入语句
+6. 使用场景：
+   - 系统初始化
+   - 数据迁移
+   - 环境部署
+7. 权限控制：
+   - 需要管理员登录
+   - 未登录跳转到登录页面
+</回答>
+
+6. OA项目中如何更新银行信息（对接财资系统）
+<问题描述>
+OA项目中如何从财资系统更新银行信息
+</问题描述>
+<回答>
+1. 接口：/manage/bankManage/updateBankManage.mvc
+2. 方法：com.web.controller.manage.BankManageController.updateBankManage
+3. 路径：/manage/bankManage/bankManageList.jsp
+4. 请求参数：updateTime（更新时间）
+5. 更新流程：
+   - 调用财资系统接口获取更新的银行数据
+   - 异步更新本地银行信息
+   - 支持新增和更新操作
+6. 注意事项：
+   - 需要选择更新时间
+   - 更新过程为异步处理
+   - 更新完成后自动刷新列表
+7. 权限控制：
+   - 需要管理员登录
+   - 未登录跳转到登录页面
+</回答> 
