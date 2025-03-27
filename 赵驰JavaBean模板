@@ -4,7 +4,7 @@
 </问题描述>
 
 <回答>
-XXX 类是在途区域表类，对应类名：com.bean.XXX.java，此处描述自己输入，XXX类对应的表名为：XXX表
+XXX 类是在途区域表类，对应类名：com.bean.XXX.java，用于XXXXX，XXX类对应的表名为：XXX表
 具体字段有（类字段名、中文名、数据库表字段名、字段类型）：
            
     parentZTRegion、父节点ID，对应com.bean.ZTRegion类、parentZTRegion，与、com.bean.ZTRegion；            
