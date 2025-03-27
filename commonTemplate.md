@@ -65,11 +65,6 @@ OA项目中员工问题表是如何增加的
 管理员层：
 先登录OA后台
 路径：人事行政 --> xxxxx --> 增加员工问题表
-路径：工资管理 --> xxxxx --> 增加员工问题表
-路径：成本统计 --> xxxxx --> 增加员工问题表
-路径：项目协议 --> xxxxx --> 增加员工问题表
-路径：到款发票 --> xxxxx --> 增加员工问题表
-路径：系统设置 --> xxxxx --> 增加员工问题表
 
 新增接口： /manage/employeesQuestion/add.mvc
 新增方法： com.web.controller.manage.EmployeesQuestionController.add
@@ -106,11 +101,6 @@ OA项目中员工问题表如何查询
 管理员层：
 先登录OA后台
 路径：人事行政 --> xxxxx --> 员工问题表列表
-路径：工资管理 --> xxxxx --> 员工问题表列表
-路径：成本统计 --> xxxxx --> 员工问题表列表
-路径：项目协议 --> xxxxx --> 员工问题表列表
-路径：到款发票 --> xxxxx --> 员工问题表列表
-路径：系统设置 --> xxxxx --> 员工问题表列表
 
 列表接口： /manage/employeesQuestion/list.mvc
 列表方法： com.web.controller.manage.EmployeesQuestionController.list
@@ -164,11 +154,7 @@ OA项目如何导出员工问题表信息
 管理员层：
 先登录OA后台
 路径：人事行政 --> xxxxx --> 员工问题表（申请）列表 --> 导出
-路径：工资管理 --> xxxxx --> 员工问题表（申请）列表 --> 导出
-路径：成本统计 --> xxxxx --> 员工问题表（申请）列表 --> 导出
-路径：项目协议 --> xxxxx --> 员工问题表（申请）列表 --> 导出
-路径：到款发票 --> xxxxx --> 员工问题表（申请）列表 --> 导出
-路径：系统设置 --> xxxxx --> 员工问题表（申请）列表 --> 导出
+
 
 接口： /manage/employeesQuestion/list.mvc
 方法： com.web.controller.manage.EmployeesQuestionController.list
@@ -217,11 +203,7 @@ OA项目如何查看员工问题表信息
 管理员层：
 先登录OA后台
 路径：人事行政 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：工资管理 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：成本统计 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：项目协议 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：到款发票 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：系统设置 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
+
 
 接口： /manage/employeesQuestion/modi.mvc
 方法： com.web.controller.manage.EmployeesQuestionController.modi
@@ -255,11 +237,6 @@ OA项目如何修改员工问题表信息
 管理员层：
 先登录OA后台
 路径：人事行政 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：工资管理 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：成本统计 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：项目协议 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：到款发票 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
-路径：系统设置 --> xxxxx --> 员工问题表（申请）列表 --> 点击“编辑（查看）”按钮
 
 接口：/manage/employeesQuestion/modiOK.mvc
 方法：com.web.controller.manage.EmployeesQuestionController.modiOK
