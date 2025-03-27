@@ -65,3 +65,7 @@ status、状态、status、包路径.对应枚举  enum；
 applyPerson、申请人、person_id、对应 包路径.对应类名；
 
 </回答>
+
+### 3. 描述一下当前页面的筛选条件
+必须按照如下格式： xxxx(xxxx)、xxxx(xxxxx)
+### 4. 描述一下当前列表页面中有哪些操作  必须按照格式 ： xxxx 、xxx
